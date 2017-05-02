@@ -1,0 +1,12 @@
+{
+	"id": "extend_upgrade_helper",
+	"version": "1.0",
+	"description": "Upgrade Helper for Packages from UliCMS eXtend",
+	"categories": [
+		"admin",
+		"update",
+		"upgrade",
+		"packages"
+	],
+	"compatible_from": "2017.1"
+}
