@@ -1,6 +1,6 @@
 {
 	"id": "extend_upgrade_helper",
-	"version": "1.6",
+	"version": "1.7",
 	"description": "Upgrade Helper for Packages from UliCMS eXtend",
 	"categories": [
 		"admin",
@@ -8,5 +8,5 @@
 		"upgrade",
 		"packages"
 	],
-	"compatible_from": "2017.1"
+	"compatible_from": "2020.2.3"
 }
