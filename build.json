@@ -1,6 +1,6 @@
 {
 	"id": "extend_upgrade_helper",
-	"version": "1.7",
+	"version": "1.8",
 	"description": "Upgrade Helper for Packages from UliCMS eXtend",
 	"categories": [
 		"admin",
