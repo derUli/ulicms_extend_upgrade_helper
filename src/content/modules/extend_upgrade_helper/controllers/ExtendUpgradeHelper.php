@@ -16,7 +16,8 @@ class ExtendUpgradeHelper extends Controller {
                 $xtendModule->version = getModuleMeta($module, "version");
                 $xtendModule->url = "https://extend.ulicms.de/" . $module . ".html";
                 $xtendModule->updateAvailable = $this->checkForUpdates(
-                        $xtendModule->name, $xtendModule->version
+                        $xtendModule->name,
+                        $xtendModule->version
                 );
 
                 $modulesFromExtend[] = $xtendModule;
@@ -41,7 +42,7 @@ class ExtendUpgradeHelper extends Controller {
         }
         $versionMatcher = new AvailablePackageVersionMatcher($data["data"]);
         $available = $versionMatcher->getCompatibleVersions();
-        
+
         return (
                 count($available) and
                 \UliCMS\Utils\VersionComparison\compare($available[0]["version"], $version, ">")
