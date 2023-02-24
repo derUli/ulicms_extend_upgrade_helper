@@ -1,11 +1,11 @@
 <?php
 
-use function UliCMS\HTML\icon;
-use function UliCMS\HTML\nbsp;
+use function App\HTML\icon;
 
 define("MODULE_ADMIN_HEADLINE", get_translation("extend_upgrade_helper"));
 
-function extend_upgrade_helper_admin() {
+function extend_upgrade_helper_admin()
+{
     $controller = ControllerRegistry::get("ExtendUpgradeHelper");
     $modules = $controller->getModules();
     ?>
@@ -21,10 +21,9 @@ function extend_upgrade_helper_admin() {
                         <?php Template::escape($module->version); ?></a>
                     <?php
                     if ($module->updateAvailable) {
-                        nbsp();
-                        echo icon("fas fa-download text-red");
+                        echo ' ' . icon("fas fa-download text-red");
                     }
-                    ?>
+                ?>
 
                 </li>
             <?php } ?>
